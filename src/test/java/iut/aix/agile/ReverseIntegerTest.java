@@ -10,6 +10,7 @@ public class ReverseIntegerTest {
 
 	@Test
 	public void reverseShouldReturn321() {
+		//Test 1
 		assertEquals(321, ReverseInteger.reverse(123));
 	}
 	
