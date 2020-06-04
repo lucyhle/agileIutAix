@@ -5,7 +5,9 @@ pipeline {
       steps {
         sleep 2
         echo 'Init Pipeline'
-        sh 'echo $M2_HOME'
+        sh '''
+
+pwd'''
       }
     }
 
