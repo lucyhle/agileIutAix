@@ -17,7 +17,7 @@ pwd'''
           steps {
             echo 'message '
             sleep 5
-            sh 'echo $PATH'
+            sh 'pwd'
           }
         }
 
