@@ -2,12 +2,25 @@ pipeline {
   agent any
   stages {
     stage('Init') {
-      steps {
-        sleep 2
-        echo 'Init Pipeline'
-        sh '''
+      parallel {
+        stage('Init') {
+          steps {
+            sleep 2
+            echo 'Init Pipeline'
+            sh '''
 
 pwd'''
+          }
+        }
+
+        stage('Init parralele ') {
+          steps {
+            echo 'message '
+            sleep 5
+            sh 'echo $PATH'
+          }
+        }
+
       }
     }
 
